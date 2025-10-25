@@ -1,73 +1,51 @@
-# Welcome to your Lovable project
+# De-hazer
 
-## Project info
+🌥️ **Welcome to the De-hazing project!** 🌥️
 
-**URL**: https://lovable.dev/projects/3d7e5798-010a-4595-8bcd-d6552284b3ba
+This project focuses on utilizing machine learning techniques to remove haze and enhance visibility in images and videos. The core architecture used here is the UNet neural network, well-suited for image-to-image translation tasks.
 
-## How can I edit this code?
+## Basic Features
 
-There are several ways of editing your application.
+✨ **Key Features** ✨
 
-**Use Lovable**
+- **Image De-Hazing:** The model is designed to remove haze and improve visibility in images and video frames.
+- **Architecture:** This repository contains two different architectures to perform de-hazing: UNet and Pix2Pix.
+- **Requirements:** Make sure you have TensorFlow, scikit-learn, OpenCV, and other dependencies installed (see requirements.txt).
 
-Simply visit the [Lovable Project](https://lovable.dev/projects/3d7e5798-010a-4595-8bcd-d6552284b3ba) and start prompting.
+## Getting Started
 
-Changes made via Lovable will be committed automatically to this repo.
+🚀 **Getting Started** 🚀
 
-**Use your preferred IDE**
+1. Clone this repository to your local machine:
 
-If you want to work locally using your own IDE, you can clone this repo and push changes. Pushed changes will also be reflected in Lovable.
+   ```
+   https://github.com/paulrounak/De-Haze.git
+   ```
 
-The only requirement is having Node.js & npm installed - [install with nvm](https://github.com/nvm-sh/nvm#installing-and-updating)
+2. Install required dependencies using the following command
 
-Follow these steps:
+   pip install -r requirements.txt
 
-```sh
-# Step 1: Clone the repository using the project's Git URL.
-git clone <YOUR_GIT_URL>
+3. Make sure your Environment Variables are set correctly
 
-# Step 2: Navigate to the project directory.
-cd <YOUR_PROJECT_NAME>
+## Trained Models
+Here is a Google Drive link to the trained models: https://drive.google.com/drive/folders/1Uh8nfn4vCnb6XOZRrU2qhV-IaLTSqJNp?usp=sharing
 
-# Step 3: Install the necessary dependencies.
-npm i
+## Sample Input Output
 
-# Step 4: Start the development server with auto-reloading and an instant preview.
-npm run dev
-```
+By enhancing the model architecture through the addition of supplementary layers and training it on high-performance dedicated GPUs, we can achieve outputs with significantly higher resolutions. You can De-Noise and Sharpen the output, to get clearer images.
 
-**Edit a file directly in GitHub**
+### **Sample Input**
 
-- Navigate to the desired file(s).
-- Click the "Edit" button (pencil icon) at the top right of the file view.
-- Make your changes and commit the changes.
+![sample_input](https://github.com/user-attachments/assets/8f719c78-5f23-4f6f-870f-77f907416f16)
 
-**Use GitHub Codespaces**
 
-- Navigate to the main page of your repository.
-- Click on the "Code" button (green button) near the top right.
-- Select the "Codespaces" tab.
-- Click on "New codespace" to launch a new Codespace environment.
-- Edit files directly within the Codespace and commit and push your changes once you're done.
+### **Sample Output : U-Net**
 
-## What technologies are used for this project?
+![output_Unet](https://github.com/user-attachments/assets/27215d29-61e2-4128-9245-d5929a19fe36)
 
-This project is built with:
 
-- Vite
-- TypeScript
-- React
-- shadcn-ui
-- Tailwind CSS
+### **Sample Output : Pix2Pix**
 
-## How can I deploy this project?
+![output_Pix2Pix](https://github.com/user-attachments/assets/f80eaf93-91cf-470b-aa2b-79448e9746b2)
 
-Simply open [Lovable](https://lovable.dev/projects/3d7e5798-010a-4595-8bcd-d6552284b3ba) and click on Share -> Publish.
-
-## Can I connect a custom domain to my Lovable project?
-
-Yes, you can!
-
-To connect a domain, navigate to Project > Settings > Domains and click Connect Domain.
-
-Read more here: [Setting up a custom domain](https://docs.lovable.dev/features/custom-domain#custom-domain)
